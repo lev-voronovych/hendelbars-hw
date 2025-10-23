@@ -1,0 +1,18 @@
+{
+  "name": "hendelbars-hw",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.16.0",
+    "parcel-transformer-hbs": "^1.0.4"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  }
+}

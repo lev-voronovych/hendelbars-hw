@@ -1,0 +1,28 @@
+1. npm init -y;
+2. npm install parcel --save-dev;
+3. Змінити скрипт у package.json;
+4. Створити папку src , у ній :
+-index.js (Підключити скрипт до index.html ),
+- data.js, 
+- папку templates -> файл products.hbs, 
+- папку styles -> index.css.
+
+5. Додати бібліотеку --->      npm install handlebars;
+6. Додати завантажувач  --->   npm i parcel-transformer-hbs;
+7. Створити файл .parcelrc, додаємо до нього {
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.hbs": ["parcel-transformer-hbs"]
+  }
+}
+8. У файлі index.js шмпортуємо дані про продукти (productsData) з data.json;
+9. У файлі index.js шмпортуємо шаблон продуктів (templateProducts) з products.hbs;
+
+
+1.1 Взяти посилання на node вузли input та контейнера. 
+1.2 Створити функцію renderProducts, яка буде приймати дані і створюватиме розмітку.
+1.3 Повістити слухач події на input. 
+1.4 Викликаємо renderProducts та передаємо дані про продукти. 
+1.5 Створюємо функцію onSearch, яка буде брати дані з інпуту використовуючи обєкт подіїта зберігатиме це значення у змінній value.
+Також в тілі функції виконується фільтрування - потрібно пройтись циклом по масиві даних про продукти та перевірити чи є співпадіння імені з value. 
+Результат передати як аргумент у виклик renderProducts.

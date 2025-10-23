@@ -1,0 +1,24 @@
+ul {
+    list-style-type: none;
+}
+
+h2,
+p {
+    margin: 0;
+}
+
+.card-name,
+.card-price {
+    margin-bottom: 10px;
+}
+
+.card-list {
+    display: flex;
+    gap: 15px;
+}
+
+.card-item {
+    padding: 10px;
+    border: 1px solid teal;
+    border-radius: 8px;
+}
